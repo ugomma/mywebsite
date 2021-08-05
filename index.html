@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>skaters world</title>
+</head>
+<body>
+<!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-skaters-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo">THE BLIND SKATERS</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="blindskaters.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>NON-STOP DISPLAY  </h2> 
+      <h3>And THE World is Our Floor.</h3>
+      <p>Join the World's First community of First class skaters. From Asia, Africa, pacific America And many more.
+        WE train and mobilise expert skaters for national, international competitions and olmypics games, we also organize our Skaters for
+      outdoor Activities, Paid appearances plus more. <a href="#">SIGN UP TODAY</a> </p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="img\fbicon.png"></a></li>
+      <li><a href="#"><img src="img\twitter.png"></a></li>
+      <li><a href="#"><img src="img\igicon.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</body>
+<script>
+const menuToggle = document.querySelector('.toggle');
+  const showcase = document.querySelector('.showcase');
+  
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    showcase.classList.toggle('active');
+  })
+  </script>
+
+</html>
